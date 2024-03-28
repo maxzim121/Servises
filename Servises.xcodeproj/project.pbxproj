@@ -12,6 +12,13 @@
 		5A7747F72BB591D2002DB7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7747F62BB591D2002DB7AA /* ViewController.swift */; };
 		5A7747FC2BB591D7002DB7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7747FB2BB591D7002DB7AA /* Assets.xcassets */; };
 		5A7747FF2BB591D7002DB7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7747FD2BB591D7002DB7AA /* LaunchScreen.storyboard */; };
+		5A7748072BB595BD002DB7AA /* ServisesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7748062BB595BD002DB7AA /* ServisesCollectionViewCell.swift */; };
+		5A77480A2BB5AF9F002DB7AA /* ResponceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7748092BB5AF9F002DB7AA /* ResponceStruct.swift */; };
+		5A77480C2BB5AFCA002DB7AA /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77480B2BB5AFCA002DB7AA /* NetworkClient.swift */; };
+		5A77480E2BB5B07C002DB7AA /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77480D2BB5B07C002DB7AA /* NetworkHelpers.swift */; };
+		5A7748102BB5B21E002DB7AA /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77480F2BB5B21E002DB7AA /* ViewControllerPresenter.swift */; };
+		5A7748122BB5B3A4002DB7AA /* ViewModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7748112BB5B3A4002DB7AA /* ViewModuleAssembly.swift */; };
+		5A7748152BB5D0C7002DB7AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7748142BB5D0C7002DB7AA /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,12 @@
 		5A7747FB2BB591D7002DB7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A7747FE2BB591D7002DB7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7748002BB591D7002DB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7748062BB595BD002DB7AA /* ServisesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServisesCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A7748092BB5AF9F002DB7AA /* ResponceStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceStruct.swift; sourceTree = "<group>"; };
+		5A77480B2BB5AFCA002DB7AA /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		5A77480D2BB5B07C002DB7AA /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		5A77480F2BB5B21E002DB7AA /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		5A7748112BB5B3A4002DB7AA /* ViewModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModuleAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7748152BB5D0C7002DB7AA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,7 @@
 		5A7747E62BB591D2002DB7AA = {
 			isa = PBXGroup;
 			children = (
+				5A7748082BB5AF87002DB7AA /* Network */,
 				5A7747F12BB591D2002DB7AA /* Servises */,
 				5A7747F02BB591D2002DB7AA /* Products */,
 			);
@@ -54,14 +69,27 @@
 		5A7747F12BB591D2002DB7AA /* Servises */ = {
 			isa = PBXGroup;
 			children = (
+				5A7748112BB5B3A4002DB7AA /* ViewModuleAssembly.swift */,
 				5A7747F22BB591D2002DB7AA /* AppDelegate.swift */,
 				5A7747F42BB591D2002DB7AA /* SceneDelegate.swift */,
 				5A7747F62BB591D2002DB7AA /* ViewController.swift */,
+				5A77480F2BB5B21E002DB7AA /* ViewControllerPresenter.swift */,
+				5A7748062BB595BD002DB7AA /* ServisesCollectionViewCell.swift */,
 				5A7747FB2BB591D7002DB7AA /* Assets.xcassets */,
 				5A7747FD2BB591D7002DB7AA /* LaunchScreen.storyboard */,
 				5A7748002BB591D7002DB7AA /* Info.plist */,
 			);
 			path = Servises;
+			sourceTree = "<group>";
+		};
+		5A7748082BB5AF87002DB7AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A7748092BB5AF9F002DB7AA /* ResponceStruct.swift */,
+				5A77480B2BB5AFCA002DB7AA /* NetworkClient.swift */,
+				5A77480D2BB5B07C002DB7AA /* NetworkHelpers.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +108,9 @@
 			dependencies = (
 			);
 			name = Servises;
+			packageProductDependencies = (
+				5A7748142BB5D0C7002DB7AA /* Kingfisher */,
+			);
 			productName = Servises;
 			productReference = 5A7747EF2BB591D2002DB7AA /* Servises.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 5A7747E62BB591D2002DB7AA;
+			packageReferences = (
+				5A7748132BB5D0C7002DB7AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5A7747F02BB591D2002DB7AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A77480A2BB5AF9F002DB7AA /* ResponceStruct.swift in Sources */,
+				5A77480E2BB5B07C002DB7AA /* NetworkHelpers.swift in Sources */,
+				5A7748072BB595BD002DB7AA /* ServisesCollectionViewCell.swift in Sources */,
 				5A7747F72BB591D2002DB7AA /* ViewController.swift in Sources */,
+				5A7748122BB5B3A4002DB7AA /* ViewModuleAssembly.swift in Sources */,
 				5A7747F32BB591D2002DB7AA /* AppDelegate.swift in Sources */,
+				5A77480C2BB5AFCA002DB7AA /* NetworkClient.swift in Sources */,
 				5A7747F52BB591D2002DB7AA /* SceneDelegate.swift in Sources */,
+				5A7748102BB5B21E002DB7AA /* ViewControllerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +320,8 @@
 				INFOPLIST_FILE = Servises/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +347,8 @@
 				INFOPLIST_FILE = Servises/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A7748132BB5D0C7002DB7AA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A7748142BB5D0C7002DB7AA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A7748132BB5D0C7002DB7AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A7747E72BB591D2002DB7AA /* Project object */;
 }
