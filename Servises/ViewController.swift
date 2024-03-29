@@ -37,8 +37,12 @@ final class ViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         presenter.viewController(viewController: self)
         servisesCollection.delegate = self
         servisesCollection.dataSource = self
@@ -94,10 +98,17 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let services = presenter.getServices()
-        guard let url = URL(string: services[indexPath.row].link) else { return }
-        let safariView = SFSafariViewController(url: url)
-        self.present(safariView, animated: true)
+        let urlScheme = urlSchemes[indexPath.row]
+        guard let appURL = URL(string: "\(urlScheme)://") else { return }
+        if UIApplication.shared.canOpenURL(appURL) {
+            UIApplication.shared.open(appURL)
+        } else {
+            let services = presenter.getServices()
+            guard let url = URL(string: services[indexPath.row].link) else { return }
+            let safariView = SFSafariViewController(url: url)
+            self.present(safariView, animated: true)
+        }
+
     }
     
     

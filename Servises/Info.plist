@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vk</string>
+		<string>mygamesapp</string>
+		<string>vkme</string>
+		<string>youla</string>
+		<string>samokat</string>
+		<string>citymobil</string>
+		<string>cloudmailru</string>
+		<string>vseapteki</string>
+		<string>mailrumail</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

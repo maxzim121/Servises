@@ -30,11 +30,6 @@ final class ServisesCollectionViewCell: UICollectionViewCell {
         return chevronIcon
     }()
     
-    lazy var link: String = {
-        var link = ""
-        return link
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureConstraints()

@@ -19,6 +19,7 @@
 		5A7748102BB5B21E002DB7AA /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77480F2BB5B21E002DB7AA /* ViewControllerPresenter.swift */; };
 		5A7748122BB5B3A4002DB7AA /* ViewModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7748112BB5B3A4002DB7AA /* ViewModuleAssembly.swift */; };
 		5A7748152BB5D0C7002DB7AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5A7748142BB5D0C7002DB7AA /* Kingfisher */; };
+		5A7748192BB6CC23002DB7AA /* ServicesURLSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7748182BB6CC23002DB7AA /* ServicesURLSchemes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5A77480D2BB5B07C002DB7AA /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
 		5A77480F2BB5B21E002DB7AA /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
 		5A7748112BB5B3A4002DB7AA /* ViewModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModuleAssembly.swift; sourceTree = "<group>"; };
+		5A7748182BB6CC23002DB7AA /* ServicesURLSchemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesURLSchemes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				5A7747FB2BB591D7002DB7AA /* Assets.xcassets */,
 				5A7747FD2BB591D7002DB7AA /* LaunchScreen.storyboard */,
 				5A7748002BB591D7002DB7AA /* Info.plist */,
+				5A7748182BB6CC23002DB7AA /* ServicesURLSchemes.swift */,
 			);
 			path = Servises;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				5A77480E2BB5B07C002DB7AA /* NetworkHelpers.swift in Sources */,
 				5A7748072BB595BD002DB7AA /* ServisesCollectionViewCell.swift in Sources */,
 				5A7747F72BB591D2002DB7AA /* ViewController.swift in Sources */,
+				5A7748192BB6CC23002DB7AA /* ServicesURLSchemes.swift in Sources */,
 				5A7748122BB5B3A4002DB7AA /* ViewModuleAssembly.swift in Sources */,
 				5A7747F32BB591D2002DB7AA /* AppDelegate.swift in Sources */,
 				5A77480C2BB5AFCA002DB7AA /* NetworkClient.swift in Sources */,
@@ -319,9 +323,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Servises/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,9 +351,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Servises/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
