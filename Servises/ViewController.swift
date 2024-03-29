@@ -102,13 +102,13 @@ extension ViewController: UICollectionViewDataSource {
         guard let appURL = URL(string: "\(urlScheme)://") else { return }
         if UIApplication.shared.canOpenURL(appURL) {
             UIApplication.shared.open(appURL)
+            return
         } else {
             let services = presenter.getServices()
             guard let url = URL(string: services[indexPath.row].link) else { return }
             let safariView = SFSafariViewController(url: url)
             self.present(safariView, animated: true)
         }
-
     }
     
     
